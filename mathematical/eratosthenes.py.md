@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: verify/mathematical/eratosthenes.test.py
+    title: verify/mathematical/eratosthenes.test.py
   _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -20,15 +23,16 @@ data:
     \ 1, i):\n            is_prime[j] = False\n\n    return is_prime\n"
   dependsOn: []
   isVerificationFile: false
-  path: math/eratosthenes.py
+  path: mathematical/eratosthenes.py
   requiredBy: []
-  timestamp: '2022-12-16 21:11:29+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
-documentation_of: math/eratosthenes.py
+  timestamp: '2022-12-16 21:55:50+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - verify/mathematical/eratosthenes.test.py
+documentation_of: mathematical/eratosthenes.py
 layout: document
 redirect_from:
-- /library/math/eratosthenes.py
-- /library/math/eratosthenes.py.html
-title: math/eratosthenes.py
+- /library/mathematical/eratosthenes.py
+- /library/mathematical/eratosthenes.py.html
+title: mathematical/eratosthenes.py
 ---
