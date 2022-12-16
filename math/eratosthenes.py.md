@@ -14,20 +14,21 @@ data:
     \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
     \  File \"/opt/hostedtoolcache/Python/3.11.1/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
-  code: "from collections import defaultdict\n\n\ndef compress(l):\n    l = list(set(l))\n\
-    \    l.sort()\n    idx = defaultdict(int)\n\n    for i in range(len(l)):\n   \
-    \     idx[l[i]] = i\n\n    return idx\n"
+  code: "def era(n):\n    is_prime = [True] * (n + 1)\n    is_prime[0] = False\n \
+    \   is_prime[1] = False\n\n    for i in range(2, int(n**0.5) + 1):\n        if\
+    \ not is_prime[i]:\n            continue\n\n        for j in range(2 * i, n +\
+    \ 1, i):\n            is_prime[j] = False\n\n    return is_prime\n"
   dependsOn: []
   isVerificationFile: false
-  path: misc/compress.py
+  path: math/eratosthenes.py
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2022-12-16 21:11:29+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: misc/compress.py
+documentation_of: math/eratosthenes.py
 layout: document
 redirect_from:
-- /library/misc/compress.py
-- /library/misc/compress.py.html
-title: misc/compress.py
+- /library/math/eratosthenes.py
+- /library/math/eratosthenes.py.html
+title: math/eratosthenes.py
 ---
